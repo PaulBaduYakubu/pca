@@ -1,37 +1,49 @@
-# pca
-🔹 GitHub Short Description (for repository header)
+# 🧠 Lycos-IDS2017 PCA Analysis  
+### Feature Reduction and Visualization for DDoS Detection  
 
-Principal Component Analysis (PCA) on the Lycos-IDS2017 dataset for dimensionality reduction and visualization to enhance DDoS detection accuracy and interpretability.
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)  
+![License](https://img.shields.io/badge/License-MIT-green.svg)  
+![Status](https://img.shields.io/badge/Status-Active-success.svg)  
 
-🧠 Lycos-IDS2017 PCA Analysis
-Feature Reduction and Visualization for DDoS Detection
+---
 
-📘 Abstract
+## 🔹 GitHub Short Description  
+> Principal Component Analysis (PCA) on the Lycos-IDS2017 dataset for dimensionality reduction and visualization to enhance DDoS detection accuracy and interpretability.
 
-This repository implements Principal Component Analysis (PCA) on the Lycos-IDS2017 dataset for dimensionality reduction and visualization in the context of Distributed Denial of Service (DDoS) attack detection.
-The analysis identifies key features contributing to network anomalies, reduces data complexity, and supports downstream machine learning pipelines aimed at real-time intrusion detection.
+---
 
-🎯 Objectives
+## 📘 Abstract  
 
-Apply PCA to reduce dataset dimensionality while preserving variance.
+This repository implements **Principal Component Analysis (PCA)** on the **Lycos-IDS2017 dataset** for dimensionality reduction and visualization in the context of **Distributed Denial of Service (DDoS) attack detection**.  
+The analysis identifies key features contributing to network anomalies, reduces data complexity, and supports downstream machine learning pipelines aimed at real-time intrusion detection.  
 
-Identify and visualize correlations among original features.
+---
 
-Evaluate explained variance ratios to determine optimal component count.
+## 🎯 Objectives  
 
-Prepare transformed data for use in automated ML (TPOT) and interpretability (SHAP) experiments.
+- Apply **PCA** to reduce dataset dimensionality while preserving variance.  
+- Identify and visualize correlations among original features.  
+- Evaluate **explained variance ratios** to determine optimal component count.  
+- Prepare transformed data for use in **automated ML (TPOT)** and **interpretability (SHAP)** experiments.  
 
-📂 Repository Structure
-├── lycos_pca.ipynb           # Main PCA analysis notebook
-├── requirements.txt          # Project dependencies
-├── README.md                 # Documentation
+---
+
+## 📂 Repository Structure  
+
+├── lycos_pca.ipynb # Main PCA analysis notebook
+├── requirements.txt # Project dependencies
+├── README.md # Documentation
 └── data/
-    └── Lycos-IDS2017.csv     # Dataset file (user-provided)
+└── Lycos-IDS2017.csv # Dataset file (user-provided)
 
-⚙️ Installation
 
-Clone the repository and install dependencies:
+---
 
+## ⚙️ Installation  
+
+Clone the repository and install dependencies:  
+
+```bash
 git clone https://github.com/<your-username>/lycos-pca.git
 cd lycos-pca
 pip install -r requirements.txt
@@ -44,8 +56,6 @@ matplotlib
 seaborn
 scikit-learn
 joblib
-
-
 ✅ Tested with Python 3.9 and above.
 
 💾 Dataset
@@ -58,15 +68,12 @@ Citation:
 Lycos-IDS2017 Dataset, Network Security Research Group, 2017.
 
 Place the file in:
-
 /data/Lycos-IDS2017.csv
 
 🚀 Usage
 
 Launch Jupyter Notebook:
-
 jupyter notebook lycos_pca.ipynb
-
 
 Run all cells sequentially to perform:
 
@@ -110,8 +117,3 @@ Integrate PCA outputs into end-to-end automated ML pipelines.
 Benchmark classifiers (e.g., Random Forest, XGBoost, SVM) on reduced features.
 
 Conduct interpretability analysis using SHAP values.
-
-👨‍💻 Author
-
-Paul Badu Yakubu
-Research Assistant, Fordham University
